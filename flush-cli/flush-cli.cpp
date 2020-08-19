@@ -130,11 +130,11 @@ int main(int argc, char** argv){
 
 	printf("hit range: (%u, %u)\n", attack->hit_begin, attack->hit_end);
 
-	printf("benchmarking...\n");
-	std::pair<double, double> results = calibrator.benchmark(*attack);
+	//printf("benchmarking...\n");
+	//std::pair<double, double> results = calibrator.benchmark(*attack);
 
-	printf("true hit: %lf%%, false hit: %lf%%\n", results.first*100, ( 1 - results.second ) * 100);
-	printf("true miss: %lf%%, false miss: %lf%%\n", results.second*100, ( 1 - results.first ) * 100);
+	//printf("true hit: %lf%%, false hit: %lf%%\n", results.first*100, ( 1 - results.second ) * 100);
+	//printf("true miss: %lf%%, false miss: %lf%%\n", results.second*100, ( 1 - results.first ) * 100);
 
 	printf("waiting for an access in '%s' at offset 0x%x...\n", executable.c_str(), offset);
 	attack->call_when_offset_is_accessed(notify_access);
