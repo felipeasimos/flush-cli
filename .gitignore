@@ -1,0 +1,7 @@
+*/runner
+*/*/runner
+*/flush-cli
+*/*.o
+*/*/*.o
+*/*.csv
+*/visualenv
