@@ -39,7 +39,7 @@ It uses the Flush+Flush attack, hence the `ff` argument.
 
 Will notify you in the terminal every time the `processKeyEvent` function
 from the `QGuiApplicationPrivate` class is called. This
-function is called everytime the calculator is launched.
+function is called everytime the `kcalc` calculator is launched.
 It uses the Flush+Flush attack, hence the `ff` argument.
 
 
