@@ -140,7 +140,7 @@ int main(int argc, char** argv){
 
 	printf("data gathering done! Writing to file...\n");
 
-	FILE* csv=fopen("hit.csv", "w");
+	FILE* csv=fopen("test.csv", "w");
 	fprintf(csv, "timestamp, hit, miss\n");
 
 	for(unsigned int i=0; i < MAX_TIMESTAMP; i++){
