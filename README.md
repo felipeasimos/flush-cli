@@ -30,9 +30,8 @@ the `fr` argument.
 ```
 
 Will notify you in the terminal every time the `kdemain` function is called. This
-function is called by the `kcalc` calculator everytime it is launched, focused,
-a button is hit or the mouse is hovered over. It uses the Flush+Flush attack,
-hence the `ff` argument.
+function is called by the `kcalc` calculator everytime it is launched.
+It uses the Flush+Flush attack, hence the `ff` argument.
 
 ### Arguments
 
