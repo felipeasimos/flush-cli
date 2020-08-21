@@ -33,6 +33,16 @@ Will notify you in the terminal every time the `kdemain` function is called. Thi
 function is called by the `kcalc` calculator everytime it is launched.
 It uses the Flush+Flush attack, hence the `ff` argument.
 
+```
+./flush-cli ff /lib/x86_64-linux-gnu/libQt5Gui.so.5 0x1229c0 1.0
+```
+
+Will notify you in the terminal every time the `processKeyEvent` function
+from the `QGuiApplicationPrivate` class is called. This
+function is called everytime the calculator is launched.
+It uses the Flush+Flush attack, hence the `ff` argument.
+
+
 ### Arguments
 
 ```
