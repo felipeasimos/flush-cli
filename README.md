@@ -22,7 +22,17 @@ the program.
 
 Will notify you in the terminal every time the `math_equation_get_variables` function
 is called. This function is called by the `gnome-calculator` application everytime
-we launch it or hit a button.
+we launch it or hit a button. This will be done using the Flush+Reload attack, hence
+the `fr` argument.
+
+```
+./flush-cli ff /usr/lib/x86_64-linux-gnu/libkdeinit5_kcalc.so 0x456f0 1.0
+```
+
+Will notify you in the terminal every time the `kdemain` function is called. This
+function is called by the `kcalc` calculator everytime it is launched, focused,
+a button is hit or the mouse is hovered over. It uses the Flush+Flush attack,
+hence the `ff` argument.
 
 ### Arguments
 
